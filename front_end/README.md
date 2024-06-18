@@ -1,1 +1,1 @@
-24:50 we starting in to the pages
+29:10 we starting in to the pages in App.js line: 19
