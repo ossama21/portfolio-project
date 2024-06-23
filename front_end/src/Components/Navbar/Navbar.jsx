@@ -16,13 +16,13 @@ const Navbar = () => {
                 <p>CLOTH CLOUD</p>
             </div>
             <ul className='nav-menu'>
-                <li onClick={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>Shop{menu ==="shop"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("mens")}}><Link to='/mens'>Men</Link>ShopMen{menu ==="mens"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("Women")}}><Link to='/women'>Women</Link>ShopWomen{menu ==="Women"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("kids")}}><Link to='/Kids'>kids</Link>ShopKids{menu ==="kids"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration:"none"}} to='/'>Shop</Link>{menu ==="shop"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("mens")}}><Link style={{textDecoration:"none"}} to='/mens'>Men</Link>{menu ==="mens"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("Women")}}><Link style={{textDecoration:"none"}} to='/womens'>Women</Link>{menu ==="Women"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("kids")}}><Link style={{textDecoration:"none"}} to='/Kids'>kids</Link>{menu ==="kids"?<hr/>:<></>}</li>
             </ul>
             <div className="Nave-login-cart">
-                <link to='/login'><button>Login</button></link>
+                <Link to='/login'><button>Login</button></Link>
                 <Link to='cart'><img src={cart_icon} alt="" /></Link>
                 <div className="nav-cart-count">0</div>
             </div>
